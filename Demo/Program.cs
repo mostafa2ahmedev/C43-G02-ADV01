@@ -4,7 +4,19 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Q1
+
+            //int[] numbers = { 5, 1, 4, 2, 8 };
+            //BubbleSort<int>.BubbleSortMethod(ref numbers);
+            //foreach (int i in numbers)
+            //{
+            //    Console.WriteLine(i); 
+               
+            //}
+            #endregion
+
+
+
         }
     }
 }
