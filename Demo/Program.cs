@@ -11,10 +11,15 @@
             //foreach (int i in numbers)
             //{
             //    Console.WriteLine(i); 
-               
+
             //}
             #endregion
+            #region Q2
+            //Range <double>  range = new Range<double>(30, 50);
+            //Console.WriteLine(range.IsInRange(49));
+            //Console.WriteLine(range.IsInRange(51)); 
 
+            #endregion
 
 
         }

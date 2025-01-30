@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Demo
 {
-    internal class Range<T>
+    internal class Range<T> where T : IComparable<T>, ISubtractionOperators<T, T, T>
     {
 
 
@@ -21,7 +21,23 @@ namespace Demo
             this.minValue = min;
             this.maxValue = max;
         }
+        public bool IsInRange(T value)
+        {
 
+            if (value.CompareTo(minValue) == 1 && value.CompareTo(maxValue) == -1)
+            {
+                return true;
 
+            }
+            return false;
+
+        }
+        public T Length()
+        {
+
+            return this.maxValue - this.minValue;
+        }
     }
+
+}
 }
