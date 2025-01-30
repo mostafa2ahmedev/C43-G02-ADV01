@@ -9,8 +9,19 @@ namespace Demo
 {
     internal class Range<T>
     {
-      
 
-       
+
+        public T minValue { get; set; }
+        public T maxValue { get; set; }
+
+
+
+        public Range(T min, T max)
+        {
+            this.minValue = min;
+            this.maxValue = max;
+        }
+
+
     }
 }
